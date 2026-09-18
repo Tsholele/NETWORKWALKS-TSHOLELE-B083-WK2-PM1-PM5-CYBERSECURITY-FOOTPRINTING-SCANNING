@@ -45,32 +45,31 @@ Three modules were completed:
 ### WHOIS
 Domain registered via GoDaddy; name servers point to HostGator; DNSSEC unsigned.
 
-![whois](01-whois.png)
+![whois](WK2-Screenshots/01-whois.png)
 
 ### WhatWeb
 WordPress 7.1.1, WP Download Manager 3.3.58, Apache, Bootstrap 7.1.1, jQuery 3.7.1; server IP 192.232.216.135; email info@networkwalks.com exposed.
 
-![whatweb](02-whatweb.png)
+![whatweb](WK2-Screenshots/02-whatweb.png)
 
 ### nslookup
 networkwalks.com resolves to 192.232.216.135.
 
-![nslookup](03-nslookup.png)
+![nslookup](WK2-Screenshots/03-nslookup.png)
 
 ### curl -I
 HTTP/2 200; Apache server; WordPress REST API endpoint /wp-json/ exposed.
 
-![curl](04-curl-headers.png)
-
+![curl](WK2-Screenshots/04-curl-headers.png)
 ### wafw00f
 Site protected by ModSecurity (SpiderLabs) WAF.
 
-![wafw00f](05-wafw00f.png)
+![wafw00f](WK2-Screenshots/05-wafw00f.png)
 
 ### dnsrecon
 SPF record revealed (HostGator infrastructure); SRV record for cPanel email autodiscovery; 8 DNS records total.
 
-![dnsrecon](06-dnsrecon.png)
+![dnsrecon](WK2-Screenshots/06-dnsrecon.png)
 
 ---
 
@@ -78,13 +77,11 @@ SPF record revealed (HostGator infrastructure); SRV record for cPanel email auto
 
 ### Baidu source, limit 1000
 
-![theHarvester Baidu](07-harvester-baidu.png)
-
+![theHarvester Baidu](WK2-Screenshots/07-harvester-baidu.png)
 ### All sources, limit 50
 Only 1 host found: `learn.microsoft.com`. Many sources require API keys; Yahoo returned 522 error. Demonstrates the limitations of passive OSINT.
 
-![theHarvester all](08-harvester-all.png)
-
+![theHarvester all](WK2-Screenshots/08-harvester-all.png)
 ---
 
 ## PM5 - Network Scanning with Zenmap
@@ -92,23 +89,23 @@ Only 1 host found: `learn.microsoft.com`. Many sources require API keys; Yahoo r
 ### Local IP & subnet
 Identified 192.168.56.1/24 and 192.168.172.1/24 from ipconfig.
 
-![ipconfig](10-ipconfig.png)
+![ipconfig](WK2-Screenshots/10-ipconfig.png)
+
+
 
 ### Ping scan of 192.168.56.0/24
 256 IPs scanned; 1 live host found (the Windows host itself). Kali VM was powered off at scan time.
 
-![Zenmap hosts](12-zenmap-hosts.png)
+![Zenmap hosts](WK2-Screenshots/12-zenmap-hosts.png)
 
 ### Nmap Output
 Raw output of the ping scan.
 
-![Zenmap output](13-zenmap-output.png)
-
+![Zenmap output](WK2-Screenshots/13-zenmap-output.png)
 ### Topology
 Network topology generated and saved as PDF on the Desktop.
 
-![Zenmap topology](15-zenmap-topolog.png)
-
+![Zenmap topology](WK2-Screenshots/15-zenmap-topolog.png)
 ---
 
 ## Risk Analysis
